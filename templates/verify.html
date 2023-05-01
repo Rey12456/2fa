@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phone Verification</title>
+    
+    <!-- Add the Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <!-- Add the Bootstrap container and flex classes -->
+    <div class="container d-flex justify-content-center align-items-center" style="height: 100vh">
+      <div>
+        <h1>Verify</h1>
+
+        <form action="/verify" accept-charset="UTF-8" method="post">
+          <div class="form-group">
+            <label>Enter the code you were sent:</label>
+            <input class="form-control" name="token" id="token"></input>
+          </div>
+          <button class="btn btn-primary" name="button" type="submit">Verify</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Add the Bootstrap JS scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
